@@ -20,7 +20,7 @@ from story import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/login/',views.HandleLoginRequest),
-    # path('api/logout',views.HandleLogoutRequest),
+    path('api/logout',views.HandleLogoutRequest),
     # path('api/poststory',views.HandlePostStoryRequest),
     # path('api/getstories',views.HandleGetStoriesRequest),
     # path('api/deletestory',views.HandleDeleteStoryRequest),

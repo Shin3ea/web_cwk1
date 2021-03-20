@@ -8,6 +8,9 @@ class Author(models.Model):
     Username=models.CharField(max_length=30,unique=True)
     Password=models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.Username
+
 class Story(models.Model):
     category_choices=[
         ('pol','politics'),
@@ -27,3 +30,6 @@ class Story(models.Model):
     Post_Date=models.DateTimeField(auto_now_add=True)
     Story_Details=models.CharField(max_length=512)
     Authors=models.ManyToManyField(Author)
+
+    def __str__(self):
+        return self.Story_Headline

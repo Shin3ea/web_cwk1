@@ -26,7 +26,7 @@ SECRET_KEY = '4iugg_8ep+p8now*wqpq_mvi#@1c-jqgxg!5goja)59jd2e4o+'
 DEBUG = True
 
 ## Would be modified later if possible
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -122,3 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
